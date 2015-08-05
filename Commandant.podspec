@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Commandant"
-  s.version      = "0.1"
+  s.version      = "0.2-beta.1"
   s.summary      = "Type-safe command line argument handling"
 
   s.description  = <<-DESC
@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.9"
 
-  s.source       = { :git => "https://github.com/Carthage/Commandant.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/Carthage/Commandant.git", :branch => "swift-2.0" }
 
   s.source_files  = "Commandant/*.swift"
 
-  s.dependency "Result", "~> 0.4"
+  s.dependency 'Result', '~> 0.6-beta.1'
 end
